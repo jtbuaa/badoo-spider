@@ -11,7 +11,7 @@ class Spider(object):
 	js=" var pArray = document.getElementsByTagName('p'); if (pArray.length > 0) console.log(window.location + ' ==== ' + pArray[0].innerHTML);"
 	driver=''
 	def __init__(self):
-		# save log to /tmp/log1, include url and profile claim
+		# save log to /tmp/log1, include url and profile introduction
 		self.driver=webdriver.Chrome(executable_path="chromedriver", service_args=["--log-path=/tmp/log1", "--verbose"])
 		return
 
