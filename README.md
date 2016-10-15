@@ -13,7 +13,9 @@ chromedriver has GUI, phantomjs do not have GUI, so have more higher performance
 1. run "python get.py" in one console,
 2. then run below cmd in another console:
 tail -f /tmp/log1  | grep text | grep ==== | grep -v "Please rotate your phone"
+
 you will get sth like this
+
       "text": "https://m.badoo.com/profile/15810xxxx ==== Know Me!!! ;)",
       "text": "https://m.badoo.com/profile/15810xxxx ==== Cool, careing loving n social ...",
       "text": "https://m.badoo.com/profile/15810xxxx ==== accepter et respecter autrui ...",
