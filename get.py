@@ -13,6 +13,7 @@ class Spider(object):
 	def __init__(self):
 		# save log to /tmp/log1, include url and profile introduction
 		self.driver=webdriver.Chrome(executable_path="chromedriver", service_args=["--log-path=/tmp/log1", "--verbose"])
+		#self.driver=webdriver.PhantomJS('/home/jingtao/Downloads/phantomjs-2.1.1-linux-x86_64/bin/phantomjs') 
 		return
 
 	def getHtml(self,page_id):
