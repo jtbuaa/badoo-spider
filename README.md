@@ -26,6 +26,7 @@ tail -f /tmp/log1  | grep text | grep ==== | grep -v "Please rotate your phone"
 
 you will get sth like this
 
-      "text": "https://m.badoo.com/profile/15810xxxx ==== Know Me!!! ;)",
-      "text": "https://m.badoo.com/profile/15810xxxy ==== Cool, careing loving n social ...",
-      "text": "https://m.badoo.com/profile/15810xxxz ==== accepter et respecter autrui ...",
+      "text": "4:32:38 PM 15811xxxx female ==== Non mi interessano ragazzi ...",
+      "text": "4:58:03 PM 15811xxxy male   ==== solo molto aperto",
+      "text": "4:58:13 PM 15811xxxz male   ==== hayata hep pozitif tarafından ...",
+
