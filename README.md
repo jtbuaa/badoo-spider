@@ -19,14 +19,14 @@ https://pypi.python.org/packages/54/4e/5efe0adb5210c2d96c060287d70274d5aa1987c05
 ## make sure your account can log into badoo in chrome browser.
 yes of course, you need have chrome browser installed.
 
-## get interesting self-introduction on badoo:
+## get interesting introduction on badoo:
 1. run "python get.py" in one console,
 2. then run below cmd in another console:
 tail -f /tmp/log1  | grep text | grep ==== | grep -v "Please rotate your phone"
 
 you will get sth like this
 
-      "text": "5:38:53 PM 158117064 M ==== I am studying and teaching ...",
-      "text": "5:43:27 PM 158117090 M ==== Soy como soy, despistao, ...",
-      "text": "5:56:36 PM 158117145 F ==== salir de fiesta",
+      "text": "5:38:53 PM 15811xxxx M ==== I am studying and teaching ...",
+      "text": "5:43:27 PM 15811xxxy M ==== Soy como soy, despistao, ...",
+      "text": "5:56:36 PM 15811xxxz F ==== salir de fiesta",
 
