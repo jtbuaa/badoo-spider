@@ -26,7 +26,7 @@ tail -f /tmp/log1  | grep text | grep ==== | grep -v "Please rotate your phone"
 
 you will get sth like this
 
-      "text": "4:32:38 PM 15811xxxx female ==== Non mi interessano ragazzi ...",
-      "text": "4:58:03 PM 15811xxxy male   ==== solo molto aperto",
-      "text": "4:58:13 PM 15811xxxz male   ==== hayata hep pozitif tarafından ...",
+      "text": "5:38:53 PM 158117064 M ==== I am studying and teaching ...",
+      "text": "5:43:27 PM 158117090 M ==== Soy como soy, despistao, ...",
+      "text": "5:56:36 PM 158117145 F ==== salir de fiesta",
 

@@ -8,7 +8,7 @@ sys.setdefaultencoding('utf-8')
 
 class Spider(object):
 	#js="document.getElementsByClassName('profile-action  js-vote-action js-touchable')[0].click();"
-	js="var gender=''; var rating=document.getElementsByClassName('js-hotness-rating-text'); if (rating.length>0) {var rating0=rating[0].innerHTML; if (rating0.indexOf('He ')>=0 || rating0.indexOf('him')>=0 || rating0.indexOf('他')>=0) gender='male  '; else if (rating0.indexOf('She ')>=0 || rating0.indexOf('her')>=0 || rating0.indexOf('她')>=0) gender='female';} if (gender!='') {var myDate=new Date(); var output = myDate.toLocaleTimeString() + ' ' + window.location.toString().substr(28) + ' ' + gender + ' ==== '; var pArray=document.getElementsByTagName('p'); if (pArray.length>0) output=output + pArray[0].innerHTML; console.log(output);}"
+	js="var gender=''; var rating=document.getElementsByClassName('js-hotness-rating-text'); if (rating.length>0) {var rating0=rating[0].innerHTML; if (rating0.indexOf('He ')>=0 || rating0.indexOf('him')>=0 || rating0.indexOf('他')>=0) gender='M'; else if (rating0.indexOf('She ')>=0 || rating0.indexOf('her')>=0 || rating0.indexOf('她')>=0) gender='F';} if (gender!='') {var myDate=new Date(); var output = myDate.toLocaleTimeString() + ' ' + window.location.toString().substr(28) + ' ' + gender + ' ==== '; var pArray=document.getElementsByTagName('p'); if (pArray.length>0) output=output + pArray[0].innerHTML; console.log(output);}"
 	driver=''
 	def __init__(self):
 		# save log to /tmp/log1, include url and profile introduction
@@ -39,7 +39,7 @@ class Spider(object):
 
 if __name__=='__main__':
 	mySpider=Spider()
-	for i in range(158116705,158185777):
+	for i in range(158117049,158185777):
 		try:
 			mySpider.getHtml(i)
 		except Exception,msg:
