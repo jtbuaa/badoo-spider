@@ -7,7 +7,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 class Spider(object):
-	js="var gender=''; var rating=document.getElementsByClassName('js-hotness-rating-text'); if (rating.length>0) {var rating0=rating[0].innerHTML; if (rating0.indexOf('He ')>=0 || rating0.indexOf('him')>=0 || rating0.indexOf('他')>=0) gender='M'; else if (rating0.indexOf('She ')>=0 || rating0.indexOf('her')>=0 || rating0.indexOf('她')>=0) gender='F';} if (gender!='') {var myDate=new Date(); var output = myDate.toLocaleTimeString() + ' ' + window.location.toString().substr(28) + ' ' + gender + ' ==== '; var pArray=document.getElementsByTagName('p'); if (pArray.length>0) output=output + pArray[0].innerHTML; console.log(output);}"
+	js="var gender=''; var rating=document.getElementsByClassName('js-hotness-rating-text'); if (rating.length>0) {var rating0=rating[0].innerHTML; if (rating0.indexOf('He ')>=0 || rating0.indexOf('him')>=0 || rating0.indexOf('他')>=0) gender='M'; else if (rating0.indexOf('She ')>=0 || rating0.indexOf('her')>=0 || rating0.indexOf('她')>=0) gender='F';} if (gender!='') {var myDate=new Date(); var output = myDate.toLocaleTimeString() + ' ' + window.location.toString().substr(28) + ' ' + gender + '===='; var pArray=document.getElementsByTagName('p'); if (pArray.length>0) output=output + pArray[0].innerHTML; console.log(output);}"
 	driver=''
 	def __init__(self):
 		# save log to /tmp/log1, include url and profile introduction
@@ -39,7 +39,7 @@ if __name__=='__main__':
 	mySpider=Spider()
 	# badoo keep user id secret unless you got matched with somebody.
 	# as I know, another range is (5xxxxxxxx,5yyyyyyyy). but many ids are empty.
-	for i in range(158117049,158185777):
+	for i in range(158131260,158185777):
 		try:
 			mySpider.getHtml(i)
 		except Exception,msg:
